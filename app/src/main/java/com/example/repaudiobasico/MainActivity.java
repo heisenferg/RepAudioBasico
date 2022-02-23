@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity implements MediaController.M
             }
         });
 
-   /*     mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 TextView estado = findViewById(R.id.textViewEstado);
                 mediaPlayer.release();
                 estado.setText("Released!");
             }
-        });*/
+        });
     }
 
     public void Show(View v){
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements MediaController.M
     public void Hide(View v){
         mc.hide();
     }
-/*
+
     public void play(View view) {
         TextView estado = findViewById(R.id.textViewEstado);
         if (mediaPlayer.isPlaying()){
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements MediaController.M
         } else {
             estado.setText("La música ya estaba parada.");
         }
-    }*/
+    }
 
     @Override
     public void start() {
